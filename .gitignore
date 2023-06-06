@@ -1,0 +1,4 @@
+node_modules
+/auth/node_modules
+/product/node_modules
+/order/node_modules

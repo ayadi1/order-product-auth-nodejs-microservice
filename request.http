@@ -1,0 +1,81 @@
+### GET Request get app products ###
+
+GET http://localhost:3000/products
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+
+### POST Request add products ###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+Accept: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+
+{
+  "name": "Product 5",
+  "price": 134
+}
+
+
+### POST Request get products by ids ###
+
+POST http://localhost:3000/products/search
+Content-Type: application/json
+Accept: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+
+{
+  "ids":["647f0f279608c2bdaff5fe84","647f0f389608c2bdaff5fe87"]
+}
+
+### !!
+### GET Request get all orders ###
+
+GET http://localhost:3001/orders
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+
+### POST Request add order ###
+
+POST http://localhost:3001/orders
+Content-Type: application/json
+Accept: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+
+{
+  "ids":["647f0f279608c2bdaff5fe84","647f0f389608c2bdaff5fe87","647f0f4a9608c2bdaff5fe8b"]
+}
+
+
+
+## !! auth
+### POST login ###
+
+POST http://localhost:3002/api/v1/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email":"ayadi@gmail.com",
+  "password":"ayadi123"
+}
+
+### POST register ###
+
+POST http://localhost:3002/api/v1/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email":"ayadi@gmail.com",
+  "password":"ayadi123",
+  "name":"ayadi oussama"
+}
+
+
+### GET  verify if user is auth
+
+GET http://localhost:3002/api/v1/verify
+Content-Type: application/json
+Accept: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
