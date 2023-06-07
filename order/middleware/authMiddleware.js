@@ -1,5 +1,5 @@
 const { default: axios } = require("axios");
-const AUTH_VERIFY_URL = "http://localhost:3002/api/v1/verify";
+const AUTH_VERIFY_URL = "http://auth:3002/api/v1/verify";
 const authMiddleware = async (req, res, next) => {
   const token = req.headers?.token;
   if (!token) {

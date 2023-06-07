@@ -3,7 +3,7 @@ const express = require("express");
 const db = require("./db");
 const Order = require("./models/Order");
 const { default: axios } = require("axios");
-const PRODUCTS_SERVICE_BASE_URL = "http://localhost:3000/products";
+const PRODUCTS_SERVICE_BASE_URL = "http://product:3000/products";
 const authMiddleware = require("./middleware/authMiddleware");
 
 const app = express();

@@ -1,3 +1,4 @@
+require("dotenv").config();
 // Import the mongoose module
 const mongoose = require("mongoose");
 
@@ -7,7 +8,7 @@ const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
 // Define the database URL to connect to.
-const mongoDB = "mongodb://127.0.0.1/product_microservice_db";
+const mongoDB = "mongodb://mongodb:27017/product_microservice_db";
 
 // Wait for database to connect, logging an error if there is a problem
 

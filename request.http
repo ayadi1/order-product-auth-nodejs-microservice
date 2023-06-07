@@ -2,18 +2,18 @@
 
 GET http://localhost:3000/products
 Content-Type: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODBjMDA1MDY2N2VkN2RiM2VkMzZjMCIsImlhdCI6MTY4NjE1OTM4NX0.ulOkDiKB7fHOwojMUQVODwOVQJxF8_Zqlt8xqAhz5dY
 
 ### POST Request add products ###
 
 POST http://localhost:3000/products
 Content-Type: application/json
 Accept: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODBjMDA1MDY2N2VkN2RiM2VkMzZjMCIsImlhdCI6MTY4NjE1OTM4NX0.ulOkDiKB7fHOwojMUQVODwOVQJxF8_Zqlt8xqAhz5dY
 
 {
-  "name": "Product 5",
-  "price": 134
+  "name": "Product 3",
+  "price": 10
 }
 
 
@@ -22,10 +22,10 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMy
 POST http://localhost:3000/products/search
 Content-Type: application/json
 Accept: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODBjMDA1MDY2N2VkN2RiM2VkMzZjMCIsImlhdCI6MTY4NjE1OTM4NX0.ulOkDiKB7fHOwojMUQVODwOVQJxF8_Zqlt8xqAhz5dY
 
 {
-  "ids":["647f0f279608c2bdaff5fe84","647f0f389608c2bdaff5fe87"]
+  "ids":["6480c03c796ffcf65a74cadf","6480c045796ffcf65a74cae1"]
 }
 
 ### !!
@@ -33,17 +33,17 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMy
 
 GET http://localhost:3001/orders
 Content-Type: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODBjMDA1MDY2N2VkN2RiM2VkMzZjMCIsImlhdCI6MTY4NjE1OTM4NX0.ulOkDiKB7fHOwojMUQVODwOVQJxF8_Zqlt8xqAhz5dY
 
 ### POST Request add order ###
 
 POST http://localhost:3001/orders
 Content-Type: application/json
 Accept: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODBjMDA1MDY2N2VkN2RiM2VkMzZjMCIsImlhdCI6MTY4NjE1OTM4NX0.ulOkDiKB7fHOwojMUQVODwOVQJxF8_Zqlt8xqAhz5dY
 
 {
-  "ids":["647f0f279608c2bdaff5fe84","647f0f389608c2bdaff5fe87","647f0f4a9608c2bdaff5fe8b"]
+  "ids":["6480c03c796ffcf65a74cadf","6480c045796ffcf65a74cae1"]
 }
 
 
@@ -78,4 +78,4 @@ Accept: application/json
 GET http://localhost:3002/api/v1/verify
 Content-Type: application/json
 Accept: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0N2YyOTY3NjMyOTA2M2MzNWMyYWI5ZiIsImlhdCI6MTY4NjA2NzQ2MX0.OlMw3KN4hdKVVRYqVgRITA_Jsoq87a3l_c0BrMcX8O4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODBjMDA1MDY2N2VkN2RiM2VkMzZjMCIsImlhdCI6MTY4NjE1OTM4NX0.ulOkDiKB7fHOwojMUQVODwOVQJxF8_Zqlt8xqAhz5dY

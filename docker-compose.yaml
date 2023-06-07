@@ -1,0 +1,48 @@
+version: "3.8"
+services:
+  auth:
+    build: ./auth
+    container_name: auth_c
+    ports:
+      - "3002:3002"
+    volumes:
+      - ./auth:/app
+      - /app/node_modules
+    depends_on:
+      - mongodb
+
+  order:
+    build: ./order
+    container_name: order_c
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./order:/app
+      - /app/node_modules
+    depends_on:
+      - mongodb
+      - auth
+      - product
+
+  product:
+    build: ./product
+    container_name: product_c
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./product:/app
+      - /app/node_modules
+    depends_on:
+      - mongodb
+      - auth
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_c
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
